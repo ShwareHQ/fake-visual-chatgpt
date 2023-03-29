@@ -41,14 +41,14 @@ By leveraging **both general and deep knowledge**, we aim at building an AI that
 <p align="center"><img src="./assets/figure.jpg" alt="Logo"></p>
 
 
-## Quick Start
+## Quick Start by ShwareHQ
 
 ```
 # clone the repo
-git clone https://github.com/microsoft/visual-chatgpt.git
+git clone git@github.com:ShwareHQ/fake-visual-chatgpt.git
 
 # Go to directory
-cd visual-chatgpt
+cd fake-visual-chatgpt
 
 # create a new environment
 conda create -n visgpt python=3.8
@@ -72,14 +72,7 @@ set OPENAI_API_KEY={Your_Private_Openai_Key}
 # The available Visual Foundation Models can be found in the following table
 # For example, if you want to load ImageCaptioning to cpu and Text2Image to cuda:0
 # You can use: "ImageCaptioning_cpu,Text2Image_cuda:0"
-
-# Advice for CPU Users
-python visual_chatgpt.py --load ImageCaptioning_cpu,Text2Image_cpu
-
-# Advice for 1 Tesla T4 15GB  (Google Colab)                       
-python visual_chatgpt.py --load "ImageCaptioning_cuda:0,Text2Image_cuda:0"
-                                
-# Advice for 4 Tesla V100 32GB                            
+                        
 python visual_chatgpt.py --load "ImageCaptioning_cuda:0,ImageEditing_cuda:0,
     Text2Image_cuda:1,Image2Canny_cpu,CannyText2Image_cuda:1,
     Image2Depth_cpu,DepthText2Image_cuda:1,VisualQuestionAnswering_cuda:2,
@@ -87,7 +80,10 @@ python visual_chatgpt.py --load "ImageCaptioning_cuda:0,ImageEditing_cuda:0,
     Image2Seg_cpu,SegText2Image_cuda:2,Image2Pose_cpu,PoseText2Image_cuda:2,
     Image2Hed_cpu,HedText2Image_cuda:3,Image2Normal_cpu,
     NormalText2Image_cuda:3,Image2Line_cpu,LineText2Image_cuda:3"
-                             
+
+# Try to enter: 
+# step1. draw a crowd
+# step2. how many people are there in the image
 ```
 
 ## GPU memory usage
